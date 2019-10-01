@@ -894,18 +894,13 @@ a:active .social-icon {
   position: relative;
 }
 
-/* line 708, src/sass/styles.scss */
-.projects__image-container:hover .projects__image-overlay {
-  opacity: 0.75;
-}
-
-/* line 713, src/sass/styles.scss */
+/* line 709, src/sass/styles.scss */
 .projects__image {
   width: 100%;
   display: block;
 }
 
-/* line 718, src/sass/styles.scss */
+/* line 714, src/sass/styles.scss */
 .projects__image-overlay {
   position: absolute;
   top: 0;
@@ -918,6 +913,11 @@ a:active .social-icon {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #000;
+}
+
+/* line 727, src/sass/styles.scss */
+.projects__image-container:hover .projects__image-overlay {
+  opacity: 0.75;
 }
 
 /* line 731, src/sass/styles.scss */

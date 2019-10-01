@@ -704,10 +704,6 @@ textarea:focus {
 	&__image-container {
 		max-width: 255px;
 		position: relative;
-
-		&:hover .projects__image-overlay {
-			opacity: 0.75;
-		}
 	}
 
 	&__image {
@@ -726,6 +722,10 @@ textarea:focus {
 		opacity: 0;
 		transition: all 0.3s ease-in-out;
 		background-color: #000;
+	}
+
+	&__image-container:hover &__image-overlay {
+		opacity: 0.75;
 	}
 
 	&__image-desc {
