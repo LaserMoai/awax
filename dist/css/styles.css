@@ -1224,8 +1224,8 @@ a:active .social-icon {
 /* line 966, src/sass/styles.scss */
 .premium__content {
   border-bottom: 1px solid #bebebe;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 /* line 975, src/sass/styles.scss */
