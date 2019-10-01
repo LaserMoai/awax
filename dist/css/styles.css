@@ -546,7 +546,8 @@ a:active .social-icon {
 
 /* line 426, src/sass/styles.scss */
 .hero {
-  background-image: url("../img/hero-image-01.jpg");
+  background-image: url("../img/hero-image-01.jpg"), -webkit-gradient(linear, left top, left bottom, from(#4d4d4d), to(#4d4d4d));
+  background-image: url("../img/hero-image-01.jpg"), linear-gradient(#4d4d4d, #4d4d4d);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
