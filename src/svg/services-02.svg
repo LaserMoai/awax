@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="SVGDoc" width="65" height="65" 
+	xmlns="http://www.w3.org/2000/svg" version="1.1" 
+	xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xmlns:avocode="https://avocode.com/" viewBox="0 0 65 65">
+	<defs></defs>
+	<desc>Generated with Avocode.</desc>
+	<g>
+		<g>
+			<title>Star</title>
+			<path d="M48.35122,41.07706l3.80583,23.30947l-19.93818,-11.00951l-19.93837,11.00951l3.80592,-23.30947l-16.0737,-16.4567l22.21842,-3.39114l9.98774,-21.25561l9.98764,21.25561l22.21832,3.39114zM39.71016,24.76656l-7.4913,-16.11221l-7.55844,16.11221l-17.4139,2.26441l12.87346,13.14216l-2.85435,16.91589l14.95323,-8.38309l14.7644,8.44656l-2.66562,-16.91677l12.74767,-13.0069z" fill="#b88b58" fill-opacity="1"></path>
+		</g>
+	</g>
+</svg>
