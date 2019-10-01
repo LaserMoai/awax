@@ -72,10 +72,6 @@ textarea:focus {
 
 /* Class Styles */
 
-.container {
-	margin: 0 auto;
-}
-
 .section {
 	padding: 50px 0;
 	background-color: #000000;
@@ -424,7 +420,6 @@ textarea:focus {
 }
 
 .hero {
-	background-image: url("../img/hero-image-01.jpg");
 	background-color: #4d4d4d;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -432,6 +427,10 @@ textarea:focus {
 	color: #ffffff;
 	text-transform: uppercase;
 	height: 100%;
+
+	&:nth-child(2) {
+		background-image: url("../img/hero-image-01.jpg");
+	}
 
 	&:nth-child(3) {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
