@@ -44,7 +44,9 @@ $(document).ready((function() {
 		arrows: false,
 		dots: true,
 		infinite: true,
-		speed: 400,
+		speed: 500,
+		fade: true,
+		cssEase: 'ease-in-out',
 		slidesToShow: 1
 	});
 }));
