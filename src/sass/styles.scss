@@ -143,10 +143,12 @@ textarea:focus {
 
 		&:hover {
 			background-color: $primary-color;
+			transition: all 0.4s ease-in-out;
 		}
 
 		&:active {
 			background-color: $primary-color-dark;
+			transition: all 0.2s ease-in-out;
 		}
 	}
 }
@@ -172,6 +174,7 @@ textarea:focus {
 
 	&--dark {
 		background-color: #373737;
+		transition: all 0.3s ease-in-out;
 	}
 
 	&--twitter {
