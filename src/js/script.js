@@ -19,15 +19,15 @@ $(document).ready(function() {
 			{
 				breakpoint: 1200,
 				settings: {
-				  slidesToShow: 2,
-				  slidesToScroll: 2
+					slidesToShow: 2,
+					slidesToScroll: 2
 				}
-			  },
-			  {
+			},
+			{
 				breakpoint: 768,
 				settings: {
-				  slidesToShow: 1,
-				  slidesToScroll: 1
+					slidesToShow: 1,
+					slidesToScroll: 1
 				}
 			}
 		]
@@ -39,7 +39,47 @@ $(document).ready(function() {
 		infinite: true,
 		speed: 500,
 		fade: true,
-		cssEase: 'ease-in-out',
+		cssEase: "ease-in-out",
 		slidesToShow: 1
+	});
+
+	AOS.init({
+		easing: "ease-in-out-back",
+		once: true,
+		duration: 1000,
+		disable: window.innerWidth < 991
+	});
+
+	// Animate numbers
+	function isScrolledIntoView(el) {
+		var elemTop = el.getBoundingClientRect().top;
+		var elemBottom = el.getBoundingClientRect().bottom;
+
+		isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+		return isVisible;
+	}
+
+	$(window).on("scroll", function() {
+		if (isScrolledIntoView(document.getElementById("facts-card-list"))) {
+			$(".fact-card__number").each(function() {
+				$(this)
+					.prop("Counter", 0)
+					.animate(
+						{
+							Counter: $(this).data("value")
+						},
+						{
+							duration: 2000,
+							easing: "swing",
+							step: function(now) {
+								$(this).text(this.Counter.toFixed());
+							}
+						}
+					);
+			});
+
+			// Unbind scroll event
+			$(window).off("scroll");
+		}
 	});
 });

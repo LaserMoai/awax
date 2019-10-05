@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 	<link rel="stylesheet" href="css/styles.min.css" />
 	<title>AWAX landing page</title>
 </head>
@@ -122,7 +123,7 @@
 					<p class="section__subheading">Who we are</p>
 				</header>
 				<main class="row">
-					<div class="col-12 col-lg-6 mb-5 text-center text-lg-left">
+					<div class="col-12 col-lg-6 mb-5 text-center text-lg-left" data-aos="fade-right">
 						<p class="about__text">Praesent metus urna, feugiat a placerat vel, elementum at leo. Quisque
 							vel fermentum ipsum. Nulla at facilisis est, vel condimentum ligula. Mauris volutpat vitae
 							risus sed pellentesque. Praesent fermentum neque ac tellus gravida, at varius sem accumsan.
@@ -131,7 +132,7 @@
 							eros. Vivamus rhoncus, ipsum in tempus fermentum, orci leo facilisis purus.</p>
 						<a href="javascript:void(0)" class="button">Learn more</a>
 					</div>
-					<div class="col-12 col-lg-6 mb-3">
+					<div class="col-12 col-lg-6 mb-3" data-aos="fade-left">
 						<img src="img/about.jpg" alt="Video thumbnail" class="about__image img-fluid d-block mx-auto" />
 					</div>
 				</main>
@@ -145,14 +146,14 @@
 				</header>
 				<main>
 					<ul class="row">
-						<li class="col-12 col-sm-6 col-xl-3 services__card-item">
+						<li class="col-12 col-sm-6 col-xl-3 services__card-item" data-aos="flip-left">
 							<div class="services__card">
 								<img src="svg/services-01.svg" alt="Service icon" class="services__icon" />
 								<h3 class="services__heading">High quality design</h3>
 								<p class="services__desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
 							</div>
 						</li>
-						<li class="col-12 col-sm-6 col-xl-3 services__card-item">
+						<li class="col-12 col-sm-6 col-xl-3 services__card-item" data-aos="flip-left">
 							<div class="services__card">
 								<img src="svg/services-02.svg" alt="Service icon" class="services__icon" />
 								<h3 class="services__heading">Modern design</h3>
@@ -160,7 +161,7 @@
 									Fugit, nesciunt adipisicing!</p>
 							</div>
 						</li>
-						<li class="col-12 col-sm-6 col-xl-3 services__card-item">
+						<li class="col-12 col-sm-6 col-xl-3 services__card-item" data-aos="flip-left">
 							<div class="services__card">
 								<img src="svg/services-03.svg" alt="Service icon" class="services__icon" />
 								<h3 class="services__heading">Regular updates</h3>
@@ -168,7 +169,7 @@
 									Fugit!</p>
 							</div>
 						</li>
-						<li class="col-12 col-sm-6 col-xl-3 services__card-item">
+						<li class="col-12 col-sm-6 col-xl-3 services__card-item" data-aos="flip-left">
 							<div class="services__card">
 								<img src="svg/services-04.svg" alt="Service icon" class="services__icon" />
 								<h3 class="services__heading">Fast and free support</h3>
@@ -212,7 +213,8 @@
 						<ul class="projects__list">
 							<li class="projects__tab">
 								<ul class="projects__image-list row">
-									<li class="projects__image-list-item col-12 col-sm-4 col-lg-3">
+									<li class="projects__image-list-item col-12 col-sm-4 col-lg-3" data-aos="flip-left"
+										data-aos-delay="50">
 										<a href="javascript:void(0)" class="projects-image-link">
 											<div class="projects__image-container">
 												<img src="img/projects-01.jpg" alt="Project illustration"
@@ -227,7 +229,8 @@
 											</div>
 										</a>
 									</li>
-									<li class="projects__image-list-item col-12 col-sm-4 col-lg-3">
+									<li class="projects__image-list-item col-12 col-sm-4 col-lg-3" data-aos="flip-left"
+										data-aos-delay="150">
 										<a href="javascript:void(0)" class="projects-image-link">
 											<div class="projects__image-container">
 												<img src="img/projects-02.jpg" alt="Project illustration"
@@ -242,7 +245,8 @@
 											</div>
 										</a>
 									</li>
-									<li class="projects__image-list-item col-12 col-sm-4 col-lg-3">
+									<li class="projects__image-list-item col-12 col-sm-4 col-lg-3" data-aos="flip-left"
+										data-aos-delay="250">
 										<a href="javascript:void(0)" class="projects-image-link">
 											<div class="projects__image-container">
 												<img src="img/projects-03.jpg" alt="Project illustration"
@@ -257,7 +261,8 @@
 											</div>
 										</a>
 									</li>
-									<li class="projects__image-list-item col-12 col-sm-4 col-lg-3">
+									<li class="projects__image-list-item col-12 col-sm-4 col-lg-3" data-aos="flip-left"
+										data-aos-delay="350">
 										<a href="javascript:void(0)" class="projects-image-link">
 											<div class="projects__image-container">
 												<img src="img/projects-04.jpg" alt="Project illustration"
@@ -272,7 +277,8 @@
 											</div>
 										</a>
 									</li>
-									<li class="projects__image-list-item col-12 col-sm-4 col-lg-3">
+									<li class="projects__image-list-item col-12 col-sm-4 col-lg-3" data-aos="flip-left"
+										data-aos-delay="50">
 										<a href="javascript:void(0)" class="projects-image-link">
 											<div class="projects__image-container">
 												<img src="img/projects-05.jpg" alt="Project illustration"
@@ -287,7 +293,8 @@
 											</div>
 										</a>
 									</li>
-									<li class="projects__image-list-item col-12 col-sm-4 col-lg-3">
+									<li class="projects__image-list-item col-12 col-sm-4 col-lg-3" data-aos="flip-left"
+										data-aos-delay="150">
 										<a href="javascript:void(0)" class="projects-image-link">
 											<div class="projects__image-container">
 												<img src="img/projects-06.jpg" alt="Project illustration"
@@ -302,7 +309,8 @@
 											</div>
 										</a>
 									</li>
-									<li class="projects__image-list-item col-12 col-sm-4 col-lg-3">
+									<li class="projects__image-list-item col-12 col-sm-4 col-lg-3" data-aos="flip-left"
+										data-aos-delay="250">
 										<a href="javascript:void(0)" class="projects-image-link">
 											<div class="projects__image-container">
 												<img src="img/projects-07.jpg" alt="Project illustration"
@@ -317,7 +325,8 @@
 											</div>
 										</a>
 									</li>
-									<li class="projects__image-list-item col-12 col-sm-4 col-lg-3">
+									<li class="projects__image-list-item col-12 col-sm-4 col-lg-3" data-aos="flip-left"
+										data-aos-delay="350">
 										<a href="javascript:void(0)" class="projects-image-link">
 											<div class="projects__image-container">
 												<img src="img/projects-08.jpg" alt="Project illustration"
@@ -332,7 +341,8 @@
 											</div>
 										</a>
 									</li>
-									<li class="projects__image-list-item col-12 col-sm-4 col-lg-3">
+									<li class="projects__image-list-item col-12 col-sm-4 col-lg-3" data-aos="flip-left"
+										data-aos-delay="50">
 										<a href="javascript:void(0)" class="projects-image-link">
 											<div class="projects__image-container">
 												<img src="img/projects-09.jpg" alt="Project illustration"
@@ -347,7 +357,8 @@
 											</div>
 										</a>
 									</li>
-									<li class="projects__image-list-item col-12 col-sm-4 col-lg-3">
+									<li class="projects__image-list-item col-12 col-sm-4 col-lg-3" data-aos="flip-left"
+										data-aos-delay="150">
 										<a href="javascript:void(0)" class="projects-image-link">
 											<div class="projects__image-container">
 												<img src="img/projects-10.jpg" alt="Project illustration"
@@ -362,7 +373,8 @@
 											</div>
 										</a>
 									</li>
-									<li class="projects__image-list-item col-12 col-sm-4 col-lg-3">
+									<li class="projects__image-list-item col-12 col-sm-4 col-lg-3" data-aos="flip-left"
+										data-aos-delay="250">
 										<a href="javascript:void(0)" class="projects-image-link">
 											<div class="projects__image-container">
 												<img src="img/projects-11.jpg" alt="Project illustration"
@@ -377,7 +389,8 @@
 											</div>
 										</a>
 									</li>
-									<li class="projects__image-list-item col-12 col-sm-4 col-lg-3">
+									<li class="projects__image-list-item col-12 col-sm-4 col-lg-3" data-aos="flip-left"
+										data-aos-delay="350">
 										<a href="javascript:void(0)" class="projects-image-link">
 											<div class="projects__image-container">
 												<img src="img/projects-12.jpg" alt="Project illustration"
@@ -421,7 +434,7 @@
 				<main>
 					<ul class="team__carousel">
 						<li class="team__slide">
-							<div class="team__card">
+							<div class="team__card" data-aos="fade-right">
 								<img src="img/team-01.jpg" alt="Team member photo" class="team__image" />
 								<div class="team__desc">
 									<h3 class="team__name">Jane Doe</h3>
@@ -469,7 +482,7 @@
 							</div>
 						</li>
 						<li class="team__slide">
-							<div class="team__card">
+							<div class="team__card" data-aos="fade-up">
 								<img src="img/team-02.jpg" alt="Team member photo" class="team__image" />
 								<div class="team__desc">
 									<h3 class="team__name">Mike Shiller</h3>
@@ -517,7 +530,7 @@
 							</div>
 						</li>
 						<li class="team__slide">
-							<div class="team__card">
+							<div class="team__card" data-aos="fade-left">
 								<img src="img/team-03.jpg" alt="Team member photo" class="team__image" />
 								<div class="team__desc">
 									<h3 class="team__name">Anna Johns</h3>
@@ -767,7 +780,7 @@
 					<p class="section__subheading">Client reviews</p>
 				</header>
 				<main>
-					<ul class="clients__carousel">
+					<ul class="clients__carousel" data-aos="zoom-in">
 						<li class="clients__slide">
 							<div class="clients__card">
 								<img src="img/clients-01.jpg" alt="Client photo" class="clients__photo" />
@@ -830,34 +843,34 @@
 		</section>
 		<section class="client-logos section section--white">
 			<ul class="client-logos__list d-flex flex-wrap justify-content-around align-items-center">
-				<li class="client-logos__item">
+				<li class="client-logos__item" data-aos="zoom-in">
 					<a href="javascript:void(0)" class="client-logos__link">
 						<img src="svg/client-logo-01.svg" alt="Logo of SpaceCube Architects"
 							class="client-logos__image" />
 					</a>
 				</li>
-				<li class="client-logos__item">
+				<li class="client-logos__item" data-aos="zoom-in">
 					<a href="javascript:void(0)" class="client-logos__link">
 						<img src="svg/client-logo-02.svg" alt="Logo of Cheshire County" class="client-logos__image" />
 					</a>
 				</li>
-				<li class="client-logos__item">
+				<li class="client-logos__item" data-aos="zoom-in">
 					<a href="javascript:void(0)" class="client-logos__link">
 						<img src="svg/client-logo-03.svg" alt="Logo of The Web Works" class="client-logos__image" />
 					</a>
 				</li>
-				<li class="client-logos__item">
+				<li class="client-logos__item" data-aos="zoom-in">
 					<a href="javascript:void(0)" class="client-logos__link">
 						<img src="svg/client-logo-04.svg" alt="Logo of Autospeed" class="client-logos__image" />
 					</a>
 				</li>
-				<li class="client-logos__item">
+				<li class="client-logos__item" data-aos="zoom-in">
 					<a href="javascript:void(0)" class="client-logos__link">
 						<img src="svg/client-logo-05.svg" alt="Logo of Croft's Accountants"
 							class="client-logos__image" />
 					</a>
 				</li>
-				<li class="client-logos__item">
+				<li class="client-logos__item" data-aos="zoom-in">
 					<a href="javascript:void(0)" class="client-logos__link">
 						<img src="svg/client-logo-06.svg" alt="Logo of Greens Food Suppliers"
 							class="client-logos__image" />
@@ -873,7 +886,7 @@
 				</header>
 				<main>
 					<ul class="row">
-						<li class="col-12 col-sm-6 col-lg-3">
+						<li class="col-12 col-sm-6 col-lg-3" data-aos="fade-up">
 							<div class="package">
 								<h3 class="package__name">Express</h3>
 								<div class="package__price">
@@ -890,7 +903,7 @@
 								<a href="javascript:void(0)" class="button button--black">Choose</a>
 							</div>
 						</li>
-						<li class="col-12 col-sm-6 col-lg-3">
+						<li class="col-12 col-sm-6 col-lg-3" data-aos="fade-up">
 							<div class="package">
 								<h3 class="package__name">Standard</h3>
 								<div class="package__price">
@@ -907,7 +920,7 @@
 								<a href="javascript:void(0)" class="button button--black">Choose</a>
 							</div>
 						</li>
-						<li class="col-12 col-sm-6 col-lg-3">
+						<li class="col-12 col-sm-6 col-lg-3" data-aos="fade-up">
 							<div class="package">
 								<h3 class="package__name">Luxe</h3>
 								<div class="package__price">
@@ -924,7 +937,7 @@
 								<a href="javascript:void(0)" class="button button--black">Choose</a>
 							</div>
 						</li>
-						<li class="col-12 col-sm-6 col-lg-3">
+						<li class="col-12 col-sm-6 col-lg-3" data-aos="fade-up">
 							<div class="package">
 								<h3 class="package__name">Premium</h3>
 								<div class="package__price">
@@ -953,11 +966,11 @@
 				</header>
 				<main>
 					<div class="premium__content row">
-						<div class="premium__image-container col-12 col-lg-5">
+						<div class="premium__image-container col-12 col-lg-5" data-aos="fade-right">
 							<img src="img/premium.jpg" alt="Premium package illustration"
 								class="premium__image img-fluid" />
 						</div>
-						<div class="premium__feature-container col-12 col-lg-7">
+						<div class="premium__feature-container col-12 col-lg-7" data-aos="fade-left">
 							<ul class="premium__feature-list">
 								<li class="premium__feature-item">
 									<div class="premium__icon-container">
@@ -1004,17 +1017,17 @@
 		</section>
 		<section class="facts section section--black" id="facts">
 			<div class="container">
-				<header class="section__header">
+				<header class="section__header" id="facts-header">
 					<h2 class="section__heading section__heading--white">Some facts</h2>
 					<p class="section__subheading">about our work</p>
 				</header>
 				<main>
-					<ul class="row">
+					<ul class="row" id="facts-card-list">
 						<li class="col-12 col-sm-6 col-lg-3">
 							<div class="fact-card">
 								<header>
 									<h3 class="fact-card__heading">
-										<div class="fact-card__number">1000</div>
+										<div class="fact-card__number" data-value="1000">1000</div>
 										<div class="fact-card__text"> design projects released </div>
 									</h3>
 								</header>
@@ -1026,7 +1039,7 @@
 							<div class="fact-card">
 								<header>
 									<h3 class="fact-card__heading">
-										<div class="fact-card__number">900</div>
+										<div class="fact-card__number" data-value="900">900</div>
 										<div class="fact-card__text"> photos </div>
 									</h3>
 								</header>
@@ -1037,7 +1050,7 @@
 							<div class="fact-card">
 								<header>
 									<h3 class="fact-card__heading">
-										<div class="fact-card__number">500</div>
+										<div class="fact-card__number" data-value="500">500</div>
 										<div class="fact-card__text"> marketing ideas </div>
 									</h3>
 								</header>
@@ -1048,7 +1061,7 @@
 							<div class="fact-card">
 								<header>
 									<h3 class="fact-card__heading">
-										<div class="fact-card__number">100</div>
+										<div class="fact-card__number" data-value="100">100</div>
 										<div class="fact-card__text"> exhibitions </div>
 									</h3>
 								</header>
@@ -1063,13 +1076,13 @@
 		<section class="share section section--white" id="share">
 			<div class="container">
 				<div class="share__flex">
-					<h2 class="share__heading">
+					<h2 class="share__heading" data-aos="fade-right">
 						<div class="share__heading-icon-container">
 							<img src="svg/share.svg" class="share__heading-icon" />
 						</div>
 						<div class="share__heading-text"> Tell about us: </div>
 					</h2>
-					<ul class="share__panel">
+					<ul class="share__panel" data-aos="fade-left">
 						<li class="share__button-item">
 							<a href="javascript:void(0)" class="share__button">
 								<i class="fab fa-twitter share__icon social-icon social-icon--twitter"></i>
@@ -1111,7 +1124,7 @@
 					<p class="section__subheading">Our agency located in Melbourne, Australia</p>
 				</header>
 				<main>
-					<form action="#" method="post" class="contact__fields row mb-4">
+					<form action="#" method="post" class="contact__fields row mb-4" data-aos="zoom-in">
 						<div class="col-12 col-lg-6">
 							<input type="text" id="name" name="name" class="contact__name form-field" aria-label="Name"
 								placeholder="Name" required />
@@ -1138,7 +1151,7 @@
 		<section class="contact-info section" id="contact-info">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 col-lg-6">
+					<div class="col-12 col-lg-6" data-aos="fade-right">
 						<address class="contact-info__content">
 							<ul class="contact-info__list">
 								<li class="contact-info__item">
@@ -1245,9 +1258,7 @@
 			<div class="page-footer__copyright"> AWAX &copy; 2019 </div>
 		</div>
 	</footer>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
 		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
 		crossorigin="anonymous"></script>
@@ -1255,6 +1266,7 @@
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="js/script.min.js"></script>
 </body>
 
