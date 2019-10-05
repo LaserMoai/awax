@@ -423,7 +423,7 @@ textarea:focus {
 	}
 }
 
-.hero {
+.hero-slide {
 	background-color: #4d4d4d;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -432,16 +432,16 @@ textarea:focus {
 	text-transform: uppercase;
 	height: 100%;
 
-	&:nth-child(2) {
+	&--1 {
 		background-image: url("../img/hero-image-01.jpg");
 	}
 
-	&:nth-child(3) {
+	&--2 {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
 			url("../img/hero-image-02.jpg");
 	}
 
-	&:nth-child(4) {
+	&--3 {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
 			url("../img/hero-image-03.jpg");
 	}

@@ -2,7 +2,6 @@ $(document).ready(function() {
 	$(".hero-carousel").slick({
 		arrows: false,
 		dots: true,
-		draggable: false,
 		infinite: true,
 		autoplay: true,
 		autoplaySpeed: 3000,
