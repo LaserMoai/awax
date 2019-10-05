@@ -12,6 +12,8 @@ $(document).ready((function() {
 		dots: true,
 		draggable: false,
 		infinite: true,
+		autoplay: true,
+		autoplaySpeed: 3000,
 		speed: 500,
 		slidesToShow: 1
 	});

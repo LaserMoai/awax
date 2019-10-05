@@ -278,7 +278,7 @@ textarea:focus {
 	}
 }
 
-/* Page Styles */
+/* Local Styles */
 
 .page-body {
 	position: relative;
@@ -331,6 +331,10 @@ textarea:focus {
 	display: flex;
 	height: 100vh;
 	padding-top: 84px;
+}
+
+.logo {
+	margin: 0;
 }
 
 .top-bar {
