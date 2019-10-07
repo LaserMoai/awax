@@ -556,18 +556,18 @@ a:active .social-icon {
 }
 
 /* line 435, src/sass/styles.scss */
-.hero-slide--1 {
+.hero-slide--1st {
   background-image: url("../img/hero-image-01.jpg");
 }
 
 /* line 439, src/sass/styles.scss */
-.hero-slide--2 {
+.hero-slide--2nd {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("../img/hero-image-02.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/hero-image-02.jpg");
 }
 
 /* line 444, src/sass/styles.scss */
-.hero-slide--3 {
+.hero-slide--3rd {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/hero-image-03.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/hero-image-03.jpg");
 }

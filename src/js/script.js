@@ -48,7 +48,7 @@ $(document).ready(function() {
 		easing: "ease-in-out-back",
 		once: true,
 		duration: 1000,
-		disable: window.innerWidth < 991
+		disable: window.innerWidth < 1200
 	});
 
 	// Animate numbers
