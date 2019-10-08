@@ -16,13 +16,13 @@
 	<title>AWAX landing page</title>
 </head>
 
-<body class="page-body">
+<body class="page-body" data-spy="scroll" data-target="#main-nav">
 	<a href="tel:+00012345678" class="phone-button">
 		<div class="phone-button__flex">
 			<img src="svg/phone.svg" alt="Call us" class="phone-button__icon" />
 		</div>
 	</a>
-	<header class="page-header">
+	<header class="page-header" id="page-header">
 		<div class="top-bar">
 			<div class="container">
 				<div class="top-bar__inner navbar navbar-expand-lg">
@@ -32,37 +32,37 @@
 						</a>
 					</h1>
 					<nav class="collapse navbar-collapse justify-content-end main-nav" id="main-nav">
-						<ul class="navbar-nav">
-							<li class="main-nav__item">
-								<a href="#" class="main-nav__link main-nav__link--active">Home</a>
+						<ul class="navbar-nav nav">
+							<li class="main-nav__item nav-item">
+								<a href="#page-header" class="main-nav__link nav-link">Home</a>
 							</li>
-							<li class="main-nav__item">
-								<a href="#about" class="main-nav__link">About us</a>
+							<li class="main-nav__item nav-item">
+								<a href="#about" class="main-nav__link nav-link">About us</a>
 							</li>
-							<li class="main-nav__item">
-								<a href="#services" class="main-nav__link">Services</a>
+							<li class="main-nav__item nav-item">
+								<a href="#services" class="main-nav__link nav-link">Services</a>
 							</li>
-							<li class="main-nav__item">
-								<a href="#projects" class="main-nav__link">Our projects</a>
+							<li class="main-nav__item nav-item">
+								<a href="#projects" class="main-nav__link nav-link">Our projects</a>
 							</li>
-							<li class="main-nav__item">
-								<a href="#team" class="main-nav__link">Our team</a>
+							<li class="main-nav__item nav-item">
+								<a href="#team" class="main-nav__link nav-link">Our team</a>
 							</li>
-							<li class="main-nav__item">
-								<a href="#clients" class="main-nav__link">Happy clients</a>
+							<li class="main-nav__item nav-item">
+								<a href="#clients" class="main-nav__link nav-link">Happy clients</a>
 							</li>
-							<li class="main-nav__item">
-								<a href="#price" class="main-nav__link">Price</a>
+							<li class="main-nav__item nav-item">
+								<a href="#price" class="main-nav__link nav-link">Price</a>
 							</li>
-							<li class="main-nav__item">
-								<a href="#facts" class="main-nav__link">Some facts</a>
+							<li class="main-nav__item nav-item">
+								<a href="#facts" class="main-nav__link nav-link">Some facts</a>
 							</li>
-							<li class="main-nav__item">
-								<a href="#contact" class="main-nav__link">Contact us</a>
+							<li class="main-nav__item nav-item">
+								<a href="#contact" class="main-nav__link nav-link">Contact us</a>
 							</li>
 						</ul>
 					</nav>
-					<button class="navbar-toggler main-nav__toggler" type="button" data-toggle="collapse"
+					<button class="main-nav-toggler navbar-toggler" type="button" data-toggle="collapse"
 						data-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
 						aria-label="Toggle navigation">
 						<i class="fas fa-bars top-bar__toggler-icon"></i>
@@ -190,34 +190,35 @@
 					<div class="d-flex justify-content-center w-100">
 						<ul class="projects__panel">
 							<li class="projects__button-item">
-								<button class="projects__button projects__button--active" data-filter="*">All</button>
+								<button class="projects__button projects__button--active"
+									onclick="filterSelection('all')">All</button>
 							</li>
 							<li class="projects__button-item">
-								<button class="projects__button" data-filter=".photos">Photos</button>
+								<button class="projects__button" onclick="filterSelection('photos')">Photos</button>
 							</li>
 							<li class="projects__button-item">
-								<button class="projects__button" data-filter=".branding">Branding</button>
+								<button class="projects__button" onclick="filterSelection('branding')">Branding</button>
 							</li>
 							<li class="projects__button-item">
-								<button class="projects__button" data-filter=".ads">Adverts</button>
+								<button class="projects__button" onclick="filterSelection('ads')">Adverts</button>
 							</li>
 							<li class="projects__button-item">
-								<button class="projects__button" data-filter=".development">Development</button>
+								<button class="projects__button" onclick="filterSelection('development')">Development</button>
 							</li>
 							<li class="projects__button-item">
-								<button class="projects__button" data-filter=".misc">Misc.</button>
+								<button class="projects__button" onclick="filterSelection('misc')">Misc.</button>
 							</li>
 						</ul>
 					</div>
-					<ul class="projects__image-list row ">
-						<li class="projects__image-list-item photos col-12 col-sm-4 col-lg-3" data-aos="flip-left"
-							data-aos-delay="50">
+					<ul class="projects__image-list row" id="projects__image-list">
+						<li class="projects__image-list-item ads col-12 col-sm-4 col-lg-3" data-aos="flip-left"
+							data-aos-delay="50" data-aos-anchor="#projects__image-list">
 							<a href="javascript:void(0)" class="projects-image-link">
 								<div class="projects__image-container">
 									<img src="img/projects-01.jpg" alt="Project illustration" class="projects__image" />
 									<div class="projects__image-overlay">
 										<div class="projects__image-desc">
-											<h3 class="projects__image-heading">Photo project</h3>
+											<h3 class="projects__image-heading">Advertising project</h3>
 											<p class="projects__image-text">Lorem ipsum dolor sit amet consectetur,
 												adipisicing elit.</p>
 										</div>
@@ -225,14 +226,14 @@
 								</div>
 							</a>
 						</li>
-						<li class="projects__image-list-item photos col-12 col-sm-4 col-lg-3" data-aos="flip-left"
-							data-aos-delay="150">
+						<li class="projects__image-list-item ads col-12 col-sm-4 col-lg-3" data-aos="flip-left"
+							data-aos-delay="150" data-aos-anchor="#projects__image-list">
 							<a href="javascript:void(0)" class="projects-image-link">
 								<div class="projects__image-container">
 									<img src="img/projects-02.jpg" alt="Project illustration" class="projects__image" />
 									<div class="projects__image-overlay">
 										<div class="projects__image-desc">
-											<h3 class="projects__image-heading">Photo project</h3>
+											<h3 class="projects__image-heading">Advertising project</h3>
 											<p class="projects__image-text">Praesent metus urna, feugiat a placerat
 												elementum at leo</p>
 										</div>
@@ -241,7 +242,7 @@
 							</a>
 						</li>
 						<li class="projects__image-list-item photos col-12 col-sm-4 col-lg-3" data-aos="flip-left"
-							data-aos-delay="250">
+							data-aos-delay="250" data-aos-anchor="#projects__image-list">
 							<a href="javascript:void(0)" class="projects-image-link">
 								<div class="projects__image-container">
 									<img src="img/projects-03.jpg" alt="Project illustration" class="projects__image" />
@@ -256,7 +257,7 @@
 							</a>
 						</li>
 						<li class="projects__image-list-item photos col-12 col-sm-4 col-lg-3" data-aos="flip-left"
-							data-aos-delay="350">
+							data-aos-delay="350" data-aos-anchor="#projects__image-list">
 							<a href="javascript:void(0)" class="projects-image-link">
 								<div class="projects__image-container">
 									<img src="img/projects-04.jpg" alt="Project illustration" class="projects__image" />
@@ -271,7 +272,7 @@
 							</a>
 						</li>
 						<li class="projects__image-list-item branding col-12 col-sm-4 col-lg-3" data-aos="flip-left"
-							data-aos-delay="50">
+							data-aos-delay="50" data-aos-anchor="#projects__image-list">
 							<a href="javascript:void(0)" class="projects-image-link">
 								<div class="projects__image-container">
 									<img src="img/projects-05.jpg" alt="Project illustration" class="projects__image" />
@@ -286,7 +287,7 @@
 							</a>
 						</li>
 						<li class="projects__image-list-item branding col-12 col-sm-4 col-lg-3" data-aos="flip-left"
-							data-aos-delay="150">
+							data-aos-delay="150" data-aos-anchor="#projects__image-list">
 							<a href="javascript:void(0)" class="projects-image-link">
 								<div class="projects__image-container">
 									<img src="img/projects-06.jpg" alt="Project illustration" class="projects__image" />
@@ -300,14 +301,14 @@
 								</div>
 							</a>
 						</li>
-						<li class="projects__image-list-item ads col-12 col-sm-4 col-lg-3" data-aos="flip-left"
-							data-aos-delay="250">
+						<li class="projects__image-list-item photos col-12 col-sm-4 col-lg-3" data-aos="flip-left"
+							data-aos-delay="250" data-aos-anchor="#projects__image-list">
 							<a href="javascript:void(0)" class="projects-image-link">
 								<div class="projects__image-container">
 									<img src="img/projects-07.jpg" alt="Project illustration" class="projects__image" />
 									<div class="projects__image-overlay">
 										<div class="projects__image-desc">
-											<h3 class="projects__image-heading">Advertising project</h3>
+											<h3 class="projects__image-heading">Photo project</h3>
 											<p class="projects__image-text">Praesent metus urna, feugiat a placerat
 												elementum at leo</p>
 										</div>
@@ -315,14 +316,14 @@
 								</div>
 							</a>
 						</li>
-						<li class="projects__image-list-item ads col-12 col-sm-4 col-lg-3" data-aos="flip-left"
-							data-aos-delay="350">
+						<li class="projects__image-list-item photos col-12 col-sm-4 col-lg-3" data-aos="flip-left"
+							data-aos-delay="350" data-aos-anchor="#projects__image-list">
 							<a href="javascript:void(0)" class="projects-image-link">
 								<div class="projects__image-container">
 									<img src="img/projects-08.jpg" alt="Project illustration" class="projects__image" />
 									<div class="projects__image-overlay">
 										<div class="projects__image-desc">
-											<h3 class="projects__image-heading">Advertising project</h3>
+											<h3 class="projects__image-heading">Photo project</h3>
 											<p class="projects__image-text">Lorem ipsum dolor sit amet consectetur,
 												adipisicing elit.</p>
 										</div>
@@ -331,7 +332,7 @@
 							</a>
 						</li>
 						<li class="projects__image-list-item development col-12 col-sm-4 col-lg-3" data-aos="flip-left"
-							data-aos-delay="50">
+							data-aos-delay="50" data-aos-anchor="#projects__image-list">
 							<a href="javascript:void(0)" class="projects-image-link">
 								<div class="projects__image-container">
 									<img src="img/projects-09.jpg" alt="Project illustration" class="projects__image" />
@@ -346,7 +347,7 @@
 							</a>
 						</li>
 						<li class="projects__image-list-item development col-12 col-sm-4 col-lg-3" data-aos="flip-left"
-							data-aos-delay="150">
+							data-aos-delay="150" data-aos-anchor="#projects__image-list">
 							<a href="javascript:void(0)" class="projects-image-link">
 								<div class="projects__image-container">
 									<img src="img/projects-10.jpg" alt="Project illustration" class="projects__image" />
@@ -361,7 +362,7 @@
 							</a>
 						</li>
 						<li class="projects__image-list-item misc col-12 col-sm-4 col-lg-3" data-aos="flip-left"
-							data-aos-delay="250">
+							data-aos-delay="250" data-aos-anchor="#projects__image-list">
 							<a href="javascript:void(0)" class="projects-image-link">
 								<div class="projects__image-container">
 									<img src="img/projects-11.jpg" alt="Project illustration" class="projects__image" />
@@ -376,7 +377,7 @@
 							</a>
 						</li>
 						<li class="projects__image-list-item misc col-12 col-sm-4 col-lg-3" data-aos="flip-left"
-							data-aos-delay="350">
+							data-aos-delay="350" data-aos-anchor="#projects__image-list">
 							<a href="javascript:void(0)" class="projects-image-link">
 								<div class="projects__image-container">
 									<img src="img/projects-12.jpg" alt="Project illustration" class="projects__image" />
@@ -866,7 +867,7 @@
 									<div class="package__period">/ month</div>
 								</div>
 								<ul class="package__feature-list">
-									<li class="package__feature">Tracking issues</li>
+									<li class="package__feature">Issue tracking</li>
 									<li class="package__feature">Report bugs via email</li>
 									<li class="package__feature">Notifications</li>
 									<li class="package__feature">Time tracking</li>
@@ -883,7 +884,7 @@
 									<div class="package__period">/ month</div>
 								</div>
 								<ul class="package__feature-list">
-									<li class="package__feature">Tracking issues</li>
+									<li class="package__feature">Issue tracking</li>
 									<li class="package__feature">Report bugs via email</li>
 									<li class="package__feature">Notifications</li>
 									<li class="package__feature">Time tracking</li>
@@ -900,7 +901,7 @@
 									<div class="package__period">/ month</div>
 								</div>
 								<ul class="package__feature-list">
-									<li class="package__feature">Tracking issues</li>
+									<li class="package__feature">Issue tracking</li>
 									<li class="package__feature">Report bugs via email</li>
 									<li class="package__feature">Notifications</li>
 									<li class="package__feature">Time tracking</li>
@@ -917,7 +918,7 @@
 									<div class="package__period">/ month</div>
 								</div>
 								<ul class="package__feature-list">
-									<li class="package__feature">Tracking issues</li>
+									<li class="package__feature">Issue tracking</li>
 									<li class="package__feature">Report bugs via email</li>
 									<li class="package__feature">Notifications</li>
 									<li class="package__feature">Time tracking</li>
@@ -930,7 +931,7 @@
 				</main>
 			</div>
 		</section>
-		<section class="premium section section--white" id="premium">
+		<section class="premium section section--white">
 			<div class="container">
 				<header class="premium__header section__header">
 					<h2 class="section__heading">Premium</h2>
@@ -1045,7 +1046,7 @@
 				</main>
 			</div>
 		</section>
-		<section class="share section section--white" id="share">
+		<section class="share section section--white">
 			<div class="container">
 				<div class="share__flex">
 					<h2 class="share__heading" data-aos="fade-right">
@@ -1239,7 +1240,6 @@
 		crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 	<script src="js/script.min.js"></script>
 </body>
 

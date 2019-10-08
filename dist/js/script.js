@@ -67,42 +67,62 @@ $(document).ready((function() {
 		isVisible = elemTop < window.innerHeight && elemBottom >= 0;
 		return isVisible;
 	}
-
-	// Add filtering to project gallery
-	// init Isotope
-	var $grid = $(".projects__image-list").isotope({});
-	// filter items on button click
-	$(".projects__panel").on("click", "button", (function() {
-		$(".projects__button--active").removeClass("projects__button--active");
-		$(this).addClass("projects__button--active");
-
-		var filterValue = $(this).attr("data-filter");
-		$grid.isotope({
-			filter: filterValue
-		});
-	}));
-
-	$(window).on("scroll", (function() {
-		if (isScrolledIntoView(document.getElementById("facts-card-list"))) {
-			$(".fact-card__number").each((function() {
-				$(this)
-					.prop("Counter", 0)
-					.animate(
-						{
-							Counter: $(this).data("value")
-						},
-						{
-							duration: 2000,
-							easing: "swing",
-							step: function(now) {
-								$(this).text(this.Counter.toFixed());
-							}
-						}
-					);
-			}));
-
-			// Unbind scroll event
-			$(window).off("scroll");
-		}
-	}));
 }));
+
+function filterSelection(c) {
+	var x, i;
+	x = document.getElementsByClassName("projects__image-list-item");
+	if (c == "all") {
+		c = "";
+	}
+	// Add the "projects__image-list-item--show" class (display:block) to the filtered elements, and remove the "projects__image-list-item--show" class from the elements that are not selected
+	for (i = 0; i < x.length; i++) {
+		removeItemClass(x[i], "projects__image-list-item--show");
+		if (x[i].className.indexOf(c) > -1) {
+			addItemClass(x[i], "projects__image-list-item--show");
+		}
+	}
+}
+
+// Add filtering to project gallery
+
+filterSelection("all");
+
+// Show filtered elements
+function addItemClass(element, name) {
+	var i, arr1, arr2;
+	arr1 = element.className.split(" ");
+	arr2 = name.split(" ");
+	for (i = 0; i < arr2.length; i++) {
+		if (arr1.indexOf(arr2[i]) == -1) {
+			element.className += " " + arr2[i];
+		}
+	}
+}
+
+// Hide elements that are not selected
+function removeItemClass(element, name) {
+	var i, arr1, arr2;
+	arr1 = element.className.split(" ");
+	arr2 = name.split(" ");
+	for (i = 0; i < arr2.length; i++) {
+		while (arr1.indexOf(arr2[i]) > -1) {
+			arr1.splice(arr1.indexOf(arr2[i]), 1);
+		}
+	}
+	element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementsByClassName("projects__panel")[0];
+var btns = btnContainer.getElementsByClassName("projects__button");
+for (var i = 0; i < btns.length; i++) {
+	btns[i].addEventListener("click", (function() {
+		var current = document.getElementsByClassName("projects__button--active");
+		current[0].className = current[0].className.replace(
+			" projects__button--active",
+			""
+		);
+		this.className += " projects__button--active";
+	}));
+}
