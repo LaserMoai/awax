@@ -68,6 +68,20 @@ $(document).ready((function() {
 		return isVisible;
 	}
 
+	// Add filtering to project gallery
+	// init Isotope
+	var $grid = $(".projects__image-list").isotope({});
+	// filter items on button click
+	$(".projects__panel").on("click", "button", (function() {
+		$(".projects__button--active").removeClass("projects__button--active");
+		$(this).addClass("projects__button--active");
+
+		var filterValue = $(this).attr("data-filter");
+		$grid.isotope({
+			filter: filterValue
+		});
+	}));
+
 	$(window).on("scroll", (function() {
 		if (isScrolledIntoView(document.getElementById("facts-card-list"))) {
 			$(".fact-card__number").each((function() {
