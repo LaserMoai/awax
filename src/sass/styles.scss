@@ -1,26 +1,26 @@
 /* Table of Contents
-	- - - - - - - - -
-	Variables
-	Global Styles
-		Tag Styles
-		Class Styles
-	Local Styles
-		Header
-		About
-		Services
-		Projects
-		Team
-		Client Reviews
-		Client Logos
-		Price
-		Premium
-		Facts
-		Share
-		Contact Us
-		Contact Information
-		Footer
-	- - - - - - - - -
- */
+- - - - - - - - -
+Variables
+Global Styles
+Tag Styles
+Class Styles
+Local Styles
+Header
+About
+Services
+Projects
+Team
+Client Reviews
+Client Logos
+Price
+Premium
+Facts
+Share
+Contact Us
+Contact Information
+Footer
+- - - - - - - - -
+*/
 
 /* Variables */
 
@@ -64,11 +64,6 @@ button:focus,
 input:focus,
 textarea:focus {
 	outline: none;
-}
-
-::placeholder {
-	color: #9e9e9e;
-	text-transform: uppercase;
 }
 
 /* Class Styles */
@@ -150,6 +145,18 @@ textarea:focus {
 	}
 }
 
+.socials-panel {
+	&__list {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		margin: 0 2px;
+	}
+}
+
 .social-icon {
 	color: #fff;
 	background-color: #bebebe;
@@ -195,21 +202,8 @@ textarea:focus {
 	}
 }
 
-.socials-panel {
-	&__list {
-		display: flex;
-		justify-content: center;
-		flex-wrap: wrap;
-	}
-
-	&__item {
-		margin: 0 2px;
-	}
-}
-
 .form-field {
 	font-size: 13px;
-	font-family: "Montserrat", sans-serif;
 	background-color: transparent;
 	width: 100%;
 	padding: 15px 0;
@@ -218,8 +212,18 @@ textarea:focus {
 	margin-bottom: 30px;
 	transition: all 0.2s ease-in-out;
 
+	&::placeholder {
+		color: #9e9e9e;
+		text-transform: uppercase;
+		transition: all 0.2s ease-in-out;
+	}
+
 	&:focus {
 		border-color: $primary-color;
+
+		&::placeholder {
+			color: $primary-color;
+		}
 	}
 }
 
@@ -279,14 +283,101 @@ textarea:focus {
 	}
 }
 
-// .show {
-// 	display: block;
-// }
-
 /* Local Styles */
 
 .page-body {
 	position: relative;
+}
+
+.top-bar {
+	background-color: #000;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 84px;
+	z-index: 10;
+
+	@media (min-width: 992px) {
+		padding: 0;
+	}
+
+	&__inner {
+		padding: 0;
+	}
+
+	&__toggler-icon {
+		font-size: 30px;
+		color: #fff;
+	}
+}
+
+.logo {
+	margin: 0;
+}
+
+.main-nav {
+	margin-top: 15px;
+
+	@media (min-width: 992px) {
+		margin-top: 0;
+	}
+
+	&__link {
+		display: block;
+		border-width: 0;
+		color: #fff;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		transition: all 0.3s ease-in-out;
+
+		@media (min-width: 992px) {
+			padding: 33px 5px 30px 5px !important; // Override Bootstrap default
+			border-bottom: 5px solid #000;
+			font-size: 11px;
+		}
+
+		@media (min-width: 1200px) {
+			padding: 30px 10px 28px 10px !important; // Override Bootstrap default
+			font-size: 14px;
+		}
+
+		&:hover,
+		&.active {
+			color: $primary-color;
+
+			@media (min-width: 992px) {
+				color: #fff;
+				border-color: $primary-color;
+			}
+		}
+
+		&:active {
+			color: $primary-color-dark;
+
+			@media (min-width: 992px) {
+				color: #fff;
+				border-color: $primary-color-dark;
+			}
+		}
+	}
+}
+
+.main-nav-toggler {
+	padding: 4px;
+	border-width: 0;
+	margin: 10px 0;
+
+	@media (min-width: 992px) {
+		margin: 23px 0;
+	}
+}
+
+.navbar-nav {
+	display: flex;
 }
 
 .phone-button {
@@ -338,87 +429,6 @@ textarea:focus {
 	padding-top: 84px;
 }
 
-.logo {
-	margin: 0;
-}
-
-.top-bar {
-	background-color: #000;
-	position: fixed;
-	display: flex;
-	align-items: center;
-	top: 0;
-	left: 0;
-	width: 100%;
-	min-height: 84px;
-	z-index: 10;
-
-	@media (min-width: 992px) {
-		padding: 0;
-	}
-
-	&__inner {
-		padding: 0 0 0 15px;
-	}
-
-	&__toggler-icon {
-		font-size: 30px;
-		color: #fff;
-	}
-}
-
-.main-nav {
-	margin-top: 15px;
-
-	@media (min-width: 992px) {
-		margin-top: 0;
-	}
-
-	&__link {
-		display: block;
-		border-bottom: 5px solid #000;
-		color: #fff;
-		font-size: 14px;
-		font-weight: 700;
-		text-transform: uppercase;
-		transition: all 0.3s ease-in-out;
-
-		&:hover,
-		&.active {
-			color: $primary-color;
-
-			@media (min-width: 992px) {
-				color: #fff;
-				border-color: $primary-color;
-			}
-		}
-
-		@media (min-width: 992px) {
-			padding: 33px 5px 30px 5px !important; // Override Bootstrap default
-			font-size: 11px;
-		}
-
-		@media (min-width: 1200px) {
-			padding: 30px 10px 28px 10px !important; // Override Bootstrap default
-			font-size: 14px;
-		}
-	}
-}
-
-.main-nav-toggler {
-	padding: 4px;
-	border-width: 0;
-	margin: 10px 0;
-
-	@media (min-width: 992px) {
-		margin: 23px 0;
-	}
-}
-
-.navbar-nav {
-	display: flex;
-}
-
 .hero-carousel {
 	width: 100%;
 	height: 100%;
@@ -437,10 +447,10 @@ textarea:focus {
 }
 
 .hero-slide {
-	background-color: #4d4d4d;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-color: #4d4d4d;
 	color: #ffffff;
 	text-transform: uppercase;
 	height: 100%;
@@ -504,7 +514,7 @@ textarea:focus {
 		}
 
 		@media (min-width: 992px) {
-			font-size: 24 px;
+			font-size: 24px;
 		}
 	}
 
@@ -532,14 +542,20 @@ textarea:focus {
 		margin-bottom: 30px;
 	}
 
-	&__image {
-		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	&__image-link {
 		transition: all 0.2s ease-in-out;
-		cursor: pointer;
 
 		&:hover {
 			filter: brightness(1.2);
 		}
+
+		&:active {
+			filter: brightness(1.25);
+		}
+	}
+
+	&__image {
+		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 	}
 }
 
@@ -547,6 +563,7 @@ textarea:focus {
 
 .services {
 	&__card-item {
+		// Paddings were used for easier border control across different responsive states
 		padding-bottom: 35px;
 		border: 0 solid #383838;
 
@@ -555,8 +572,7 @@ textarea:focus {
 		}
 
 		@media (min-width: 576px) {
-			&:nth-child(3),
-			&:nth-child(4) {
+			&:nth-child(3) {
 				padding-bottom: 0;
 			}
 
@@ -709,6 +725,7 @@ textarea:focus {
 
 	&__image-list {
 		margin: auto;
+		width: 100%;
 
 		@media (min-width: 1200px) {
 			min-height: 570px; // Prevent AOS-related issues later down the page
@@ -756,7 +773,7 @@ textarea:focus {
 		color: white;
 		font-size: 20px;
 		position: absolute;
-		width: 80%;
+		width: 90%;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
@@ -801,7 +818,7 @@ textarea:focus {
 	background-size: cover;
 
 	&__card {
-		display: flex; //TODO
+		display: flex;
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
@@ -993,9 +1010,6 @@ textarea:focus {
 		margin-bottom: 25px;
 	}
 
-	&__image-container {
-	}
-
 	&__image {
 		display: block;
 		margin: 0 auto;
@@ -1011,24 +1025,17 @@ textarea:focus {
 	}
 
 	&__icon-container {
-		margin-right: 15px;
-	}
-
-	&__icon {
-		font-size: 40px;
-		color: $primary-color;
+		margin-right: 20px;
 	}
 
 	&__feature-heading {
-		margin-top: 8px;
 		color: #242424;
 		font-size: 21px;
 		font-weight: 700;
 		text-transform: uppercase;
 	}
 
-	&__feature-desc,
-	&__subfeature {
+	&__text-container {
 		color: #5b5b5b;
 		font-size: 14px;
 		font-weight: 300;
@@ -1081,7 +1088,7 @@ textarea:focus {
 			width: 20px;
 			height: 3px;
 			background-color: #7e7e7e;
-			bottom: 10px;
+			bottom: 12px;
 			left: calc(50% - 10px);
 		}
 	}
@@ -1187,7 +1194,7 @@ textarea:focus {
 		transition: all 0.2s ease-in-out;
 	}
 
-	a:hover &__number {
+	&__button:hover &__number {
 		color: $primary-color;
 	}
 
@@ -1204,8 +1211,6 @@ textarea:focus {
 /* Contact Us */
 
 .contact {
-	display: flex;
-
 	&__fields {
 		max-width: 530px;
 		margin: 0 auto;
@@ -1256,10 +1261,7 @@ textarea:focus {
 		transition: all 0.2s ease-in-out;
 	}
 
-	&__link-substitute:hover &__icon {
-		background-color: $primary-color;
-	}
-
+	&__link-substitute:hover &__icon,
 	&__link:hover &__icon {
 		background-color: $primary-color;
 	}
@@ -1319,7 +1321,7 @@ textarea:focus {
 
 	&__container {
 		position: relative;
-		padding-bottom: 20px;
+		padding-bottom: 50px;
 
 		@media (min-width: 992px) {
 			padding-bottom: 0;
@@ -1362,7 +1364,6 @@ textarea:focus {
 
 	&__text-column {
 		color: #7e7e7e;
-		font-family: Montserrat;
 		font-size: 12px;
 		font-weight: 400;
 		line-height: 21px;
@@ -1372,7 +1373,7 @@ textarea:focus {
 		position: absolute;
 		left: 50%;
 		margin-left: -45px;
-		bottom: 10px;
+		bottom: 20px;
 		font-size: 14px;
 		color: #fff;
 
