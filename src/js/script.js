@@ -45,6 +45,8 @@ function isScrolledIntoView(el) {
 }
 
 $(document).ready(function() {
+	// Initialize carousels
+
 	$(".hero-carousel").slick({
 		arrows: false,
 		dots: true,
@@ -90,6 +92,8 @@ $(document).ready(function() {
 		slidesToShow: 1
 	});
 
+	// Initialize on-scroll animations
+
 	AOS.init({
 		easing: "ease-in-out-back",
 		once: true,
@@ -116,6 +120,7 @@ $(document).ready(function() {
 	}
 
 	// Animate numbers
+
 	$(window).on("scroll", function(event) {
 		if (isScrolledIntoView(document.getElementById("facts-card-list"))) {
 			$(".fact-card__number").each(function() {
