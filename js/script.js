@@ -1,3 +1,11 @@
+/*!
+ * awax v0.1.0
+ * 
+ * (c) 2019 Daniil Zhilin
+ * MIT License
+ * https://github.com/LaserMoai/awax
+ */
+
 function addItemClass(element, name) {
 	var i, arr1, arr2;
 	arr1 = element.className.split(" ");
@@ -44,7 +52,7 @@ function isScrolledIntoView(el) {
 	return isVisible;
 }
 
-$(document).ready(function() {
+$(document).ready((function() {
 	// Initialize carousels
 
 	$(".hero-carousel").slick({
@@ -109,21 +117,21 @@ $(document).ready(function() {
 	var btnContainer = document.getElementById("projects__panel");
 	var btns = btnContainer.getElementsByClassName("projects__button");
 	for (var i = 0; i < btns.length; i++) {
-		btns[i].addEventListener("click", function() {
+		btns[i].addEventListener("click", (function() {
 			var current = document.getElementsByClassName("projects__button--active");
 			current[0].className = current[0].className.replace(
 				" projects__button--active",
 				""
 			);
 			this.className += " projects__button--active";
-		});
+		}));
 	}
 
 	// Animate numbers
 
-	$(window).on("scroll", function(event) {
+	$(window).on("scroll", (function(event) {
 		if (isScrolledIntoView(document.getElementById("facts-card-list"))) {
-			$(".fact-card__number").each(function() {
+			$(".fact-card__number").each((function() {
 				$(this)
 					.prop("Counter", 0)
 					.animate(
@@ -138,9 +146,9 @@ $(document).ready(function() {
 							}
 						}
 					);
-			});
+			}));
 
 			$(window).off(event);
 		}
-	});
-});
+	}));
+}));
