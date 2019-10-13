@@ -153,7 +153,7 @@ textarea:focus {
 	}
 
 	&__item:not(:last-child) {
-		margin-right: 4px;
+		margin-right: 5px;
 	}
 }
 
@@ -731,7 +731,7 @@ textarea:focus {
 		width: 100%;
 
 		@media (min-width: 1200px) {
-			min-height: 570px; // Prevent AOS-related issues later down the page
+			min-height: 570px; // Prevent aos.js-related issues later down the page
 		}
 	}
 
@@ -764,7 +764,7 @@ textarea:focus {
 		height: 100%;
 		width: 100%;
 		opacity: 0;
-		transition: all 0.3s ease-in-out;
+		transition: all 0.4s ease-in-out;
 		background-color: #000;
 	}
 
@@ -786,7 +786,7 @@ textarea:focus {
 	&__image-heading {
 		font-size: 16px;
 		font-weight: 500;
-		line-height: 24.7px;
+		line-height: 25px;
 		text-transform: uppercase;
 		margin-bottom: 0;
 
@@ -810,6 +810,10 @@ textarea:focus {
 			font-size: 12px;
 		}
 	}
+
+	&__image-container:hover &__image-heading, &__image-container:hover &__image-text {
+		opacity: 1;
+	}
 }
 
 /* Team */
@@ -825,7 +829,7 @@ textarea:focus {
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-		padding: 40px 15px;
+		padding: 40px 10px;
 		margin: 0 auto;
 		border-radius: 5px;
 		max-width: 330px;
@@ -1177,7 +1181,7 @@ textarea:focus {
 
 		@media (min-width: 576px) {
 			&:not(:last-child) {
-				margin-right: 35px;
+				margin-right: 40px;
 			}
 		}
 	}
