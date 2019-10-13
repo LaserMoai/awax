@@ -152,8 +152,8 @@ textarea:focus {
 		flex-wrap: wrap;
 	}
 
-	&__item {
-		margin: 0 2px;
+	&__item:not(:last-child) {
+		margin-right: 4px;
 	}
 }
 
@@ -243,7 +243,10 @@ textarea:focus {
 
 	li {
 		line-height: 0;
-		margin: 0 5px;
+
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
 	}
 
 	button {
@@ -1064,7 +1067,6 @@ textarea:focus {
 	text-align: center;
 	height: 100%;
 	padding: 0 40px;
-	margin-bottom: 30px;
 	background-color: transparent;
 
 	&__heading {
@@ -1169,10 +1171,14 @@ textarea:focus {
 	}
 
 	&__button-item {
-		margin: 0 8px;
+		&:not(:last-child) {
+			margin-right: 16px;
+		}
 
 		@media (min-width: 576px) {
-			margin-right: 25px;
+			&:not(:last-child) {
+				margin-right: 35px;
+			}
 		}
 	}
 
@@ -1238,7 +1244,7 @@ textarea:focus {
 		padding: 50px 30px;
 	}
 
-	&__item {
+	&__item:not(:last-child) {
 		margin-bottom: 10px;
 	}
 
