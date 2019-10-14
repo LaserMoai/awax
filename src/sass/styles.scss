@@ -1255,6 +1255,7 @@ textarea:focus {
 	&__link-substitute,
 	&__link {
 		display: inline-flex;
+		align-items: center;
 	}
 
 	&__icon {
@@ -1282,7 +1283,6 @@ textarea:focus {
 
 	&__text {
 		font-size: 14px;
-		margin-top: 8px;
 		transition: all 0.2s ease-in-out;
 	}
 
