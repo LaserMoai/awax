@@ -1656,9 +1656,12 @@ a:active .social-icon {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-/* line 1260, src/sass/styles.scss */
+/* line 1261, src/sass/styles.scss */
 .contact-info__icon {
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -1675,21 +1678,20 @@ a:active .social-icon {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 1274, src/sass/styles.scss */
+/* line 1275, src/sass/styles.scss */
 .contact-info__link-substitute:hover .contact-info__icon,
 .contact-info__link:hover .contact-info__icon {
   background-color: #b88b58;
 }
 
-/* line 1279, src/sass/styles.scss */
+/* line 1280, src/sass/styles.scss */
 .contact-info__link:active .contact-info__icon {
   background-color: #9b764c;
 }
 
-/* line 1283, src/sass/styles.scss */
+/* line 1284, src/sass/styles.scss */
 .contact-info__text {
   font-size: 14px;
-  margin-top: 8px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }

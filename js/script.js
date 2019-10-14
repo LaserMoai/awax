@@ -118,8 +118,8 @@ $(document).ready((function() {
 	var btns = btnContainer.getElementsByClassName("projects__button");
 	for (var i = 0; i < btns.length; i++) {
 		btns[i].addEventListener("click", (function() {
-			var current = document.getElementsByClassName("projects__button--active");
-			current[0].className = current[0].className.replace(
+			var current = document.getElementsByClassName("projects__button--active")[0];
+			current.className = current.className.replace(
 				" projects__button--active",
 				""
 			);
