@@ -901,8 +901,15 @@ textarea:focus {
 		margin-bottom: 30px;
 	}
 
-	&__icon {
+	&__quote::before {
+		content: "\f10d";
+		font-family: "Font Awesome 5 Free";
+		display: block;
+		font-style: normal;
+		font-variant: normal;
+		text-rendering: auto;
 		font-size: 27px;
+		font-weight: 900;
 		margin-bottom: 15px;
 	}
 
@@ -1029,10 +1036,11 @@ textarea:focus {
 	&__feature-item {
 		display: flex;
 		margin-bottom: 10px;
-	}
 
-	&__icon-container {
-		margin-right: 20px;
+		&::before {
+			content: url("../img/premium-icon.png");
+			margin-right: 20px;	
+		}
 	}
 
 	&__feature-heading {
