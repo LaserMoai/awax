@@ -603,11 +603,30 @@ textarea:focus {
 	}
 
 	&__icon {
+		background-position: center;
+		background-repeat: no-repeat;
 		width: 59px;
+		height: 59px;
 		margin: 0 auto 15px auto;
 
 		@media (min-width: 576px) {
 			margin-bottom: 35px;
+		}
+
+		&--1st {
+			background-image: url("../svg/services-01.svg");
+		}
+
+		&--2nd {
+			background-image: url("../svg/services-02.svg");
+		}
+
+		&--3rd {
+			background-image: url("../svg/services-03.svg");
+		}
+
+		&--4th {
+			background-image: url("../svg/services-04.svg");
 		}
 	}
 
@@ -1264,6 +1283,42 @@ textarea:focus {
 	&__link {
 		display: inline-flex;
 		align-items: center;
+
+		&::before {
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+			flex-shrink: 0;
+			color: #fff;
+			text-align: center;
+			background-color: #bebebe;
+			border-radius: 50%;
+			margin-right: 15px;
+			display: inline-block;
+			width: 35px;
+			height: 35px;
+			line-height: 35px;
+			transition: all 0.2s ease-in-out;
+		}
+		
+		&--mail-location::before {
+			content: "\f0e0";
+		}
+
+		&--location::before {
+			content: "\f3c5";
+		}
+
+		&--number::before {
+			content: "\f095";
+		}
+
+		&--email::before {
+			content: "\f1fa";
+		}
+
+		&--website::before {
+			content: "\f0ac";
+		}
 	}
 
 	&__icon {
@@ -1280,12 +1335,12 @@ textarea:focus {
 		transition: all 0.2s ease-in-out;
 	}
 
-	&__link-substitute:hover &__icon,
-	&__link:hover &__icon {
+	&__link-substitute:hover::before,
+	&__link:hover::before {
 		background-color: $primary-color;
 	}
 
-	&__link:active &__icon {
+	&__link:active::before {
 		background-color: $primary-color-dark;
 	}
 
