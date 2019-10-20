@@ -120,13 +120,13 @@ var cleanDist = function (done) {
 
 // Repeated JavaScript tasks
 var jsTasks = lazypipe()
-	.pipe(header, banner.full, {package: package})
+	// .pipe(header, banner.full, {package: package})
 	.pipe(optimizejs)
 	.pipe(dest, paths.scripts.output)
 	.pipe(rename, {suffix: '.min'})
 	.pipe(uglify)
 	.pipe(optimizejs)
-	.pipe(header, banner.min, {package: package})
+	// .pipe(header, banner.min, {package: package})
 	.pipe(dest, paths.scripts.output);
 
 // Lint, minify, and concatenate scripts
@@ -210,7 +210,7 @@ var buildStyles = function (done) {
 				remove: true
 			})
 		]))
-		.pipe(header(banner.full, {package: package}))
+		// .pipe(header(banner.full, {package: package}))
 		.pipe(dest(paths.styles.output))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(postcss([
@@ -225,7 +225,7 @@ var buildStyles = function (done) {
 		// 		removeAll: true
 		// 	}
 		// }))
-		.pipe(header(banner.min, {package: package}))
+		// .pipe(header(banner.min, {package: package}))
 		.pipe(dest(paths.styles.output));
 
 };

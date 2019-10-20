@@ -1,11 +1,3 @@
-/*!
- * awax v0.1.0
- * 
- * (c) 2019 Daniil Zhilin
- * MIT License
- * https://github.com/LaserMoai/awax
- */
-
 function addItemClass(element, name) {
 	var i, arr1, arr2;
 	arr1 = element.className.split(" ");
