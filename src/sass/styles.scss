@@ -809,28 +809,10 @@ textarea:focus {
 		line-height: 20px;
 		text-transform: uppercase;
 		margin-bottom: 5px;
-
-		@media (min-width: 576px) {
-			font-size: 10px;
-			line-height: 12px;
-		}
-
-		@media (min-width: 992px) {
-			font-size: 16px;
-			line-height: 20px;
-		}
 	}
 
 	&__image-text {
 		font-size: 12px;
-
-		@media (min-width: 576px) {
-			font-size: 9px;
-		}
-
-		@media (min-width: 992px) {
-			font-size: 12px;
-		}
 	}
 
 	&__image-container:hover &__image-heading,
