@@ -594,7 +594,8 @@ a:active .social-icon {
   position: absolute;
   bottom: 30px;
   left: 50%;
-  margin-left: -36px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 453, src/sass/styles.scss */

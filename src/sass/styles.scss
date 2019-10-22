@@ -446,7 +446,7 @@ textarea:focus {
 		position: absolute;
 		bottom: 30px;
 		left: 50%;
-		margin-left: -36px;
+		transform: translateX(-50%);
 	}
 }
 
