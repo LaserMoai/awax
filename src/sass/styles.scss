@@ -806,16 +806,18 @@ textarea:focus {
 	&__image-heading {
 		font-size: 16px;
 		font-weight: 500;
-		line-height: 25px;
+		line-height: 20px;
 		text-transform: uppercase;
-		margin-bottom: 0;
+		margin-bottom: 5px;
 
 		@media (min-width: 576px) {
-			font-size: 12px;
+			font-size: 10px;
+			line-height: 12px;
 		}
 
 		@media (min-width: 992px) {
 			font-size: 16px;
+			line-height: 20px;
 		}
 	}
 
@@ -823,7 +825,7 @@ textarea:focus {
 		font-size: 12px;
 
 		@media (min-width: 576px) {
-			font-size: 10px;
+			font-size: 9px;
 		}
 
 		@media (min-width: 992px) {
@@ -831,7 +833,8 @@ textarea:focus {
 		}
 	}
 
-	&__image-container:hover &__image-heading, &__image-container:hover &__image-text {
+	&__image-container:hover &__image-heading,
+	&__image-container:hover &__image-text {
 		opacity: 1;
 	}
 }
@@ -1059,7 +1062,7 @@ textarea:focus {
 
 		&::before {
 			content: url("../img/premium-icon.png");
-			margin-right: 20px;	
+			margin-right: 20px;
 		}
 	}
 
@@ -1296,7 +1299,7 @@ textarea:focus {
 			line-height: 35px;
 			transition: all 0.2s ease-in-out;
 		}
-		
+
 		&--mail-location::before {
 			content: "\f0e0";
 		}
