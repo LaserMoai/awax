@@ -1261,7 +1261,7 @@ a:active .social-icon {
 
 /* line 983, src/sass/styles.scss */
 .package__period {
-  color: #aeaeae;
+  color: #999999;
   font-size: 12px;
   text-transform: uppercase;
 }
@@ -1275,7 +1275,7 @@ a:active .social-icon {
 .package__feature {
   position: relative;
   font-size: 11px;
-  color: #7e7e7e;
+  color: #757575;
 }
 
 /* line 998, src/sass/styles.scss */
@@ -1293,7 +1293,7 @@ a:active .social-icon {
   right: 0;
   width: 8px;
   height: 1px;
-  background-color: #7e7e7e;
+  background-color: #757575;
 }
 
 /* Premium */
