@@ -52,7 +52,7 @@ $(document).ready((function() {
 		dots: true,
 		infinite: true,
 		autoplay: true,
-		autoplaySpeed: 3000,
+		autoplaySpeed: 6000,
 		speed: 500,
 		slidesToShow: 1
 	});

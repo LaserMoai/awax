@@ -872,6 +872,15 @@ textarea:focus {
 /* Client Reviews */
 
 .clients {
+	&__header {
+		// Make on-scroll animation look good
+		margin-bottom: 0;
+	}
+
+	&__main {
+		margin-top: 35px;
+	}
+
 	&__carousel {
 		max-width: 700px;
 		margin: 0 auto;
