@@ -1,3 +1,11 @@
+function handleFirstTab(e) {
+	if (e.keyCode === 9) {
+		// the "I am a keyboard user" key
+		document.body.classList.add("user-is-tabbing");
+		window.removeEventListener("keydown", handleFirstTab);
+	}
+}
+
 function addItemClass(element, name) {
 	var i, arr1, arr2;
 	arr1 = element.className.split(" ");
@@ -45,6 +53,10 @@ function isScrolledIntoView(el) {
 }
 
 $(document).ready((function() {
+	// Preserve outlines for keyboard-only users
+
+	window.addEventListener("keydown", handleFirstTab);
+
 	// Initialize carousels
 
 	$(".hero-carousel").slick({
@@ -110,7 +122,9 @@ $(document).ready((function() {
 	var btns = btnContainer.getElementsByClassName("projects__button");
 	for (var i = 0; i < btns.length; i++) {
 		btns[i].addEventListener("click", (function() {
-			var current = document.getElementsByClassName("projects__button--active")[0];
+			var current = document.getElementsByClassName(
+				"projects__button--active"
+			)[0];
 			current.className = current.className.replace(
 				" projects__button--active",
 				""
