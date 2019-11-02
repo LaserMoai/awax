@@ -1116,9 +1116,7 @@ a:active .social-icon {
 
 /* line 872, src/sass/styles.scss */
 .team .slick-dots {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 0 auto;
 }
 
 /* Client Reviews */
@@ -1200,9 +1198,7 @@ a:active .social-icon {
 
 /* line 940, src/sass/styles.scss */
 .clients .slick-dots {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 0 auto;
 }
 
 /* Client Logos */
