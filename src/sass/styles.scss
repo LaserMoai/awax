@@ -495,10 +495,12 @@ body:not(.user-is-tabbing) .slick-slide * {
 	}
 
 	&__upper-slogan {
+		display: block;
 		color: #ffffff;
 	}
 
 	&__lower-slogan {
+		display: block;
 		color: #b88b58;
 	}
 
@@ -1111,6 +1113,7 @@ body:not(.user-is-tabbing) .slick-slide * {
 	}
 
 	&__number {
+		display: block;
 		font-size: 48px;
 		font-weight: 700;
 		position: relative;
@@ -1129,6 +1132,7 @@ body:not(.user-is-tabbing) .slick-slide * {
 	}
 
 	&__text {
+		display: block;
 		font-size: 18px;
 		font-weight: 600;
 		text-transform: uppercase;
