@@ -317,9 +317,9 @@ body:not(.user-is-tabbing) .slick-slide * {
 
 /* line 240, src/scss/styles.scss */
 .slick-dots {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /* line 243, src/scss/styles.scss */
