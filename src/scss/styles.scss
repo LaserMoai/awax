@@ -238,7 +238,7 @@ body:not(.user-is-tabbing) .slick-slide * {
 }
 
 .slick-dots {
-	display: inline-flex;
+	display: flex;
 
 	li {
 		line-height: 0;
